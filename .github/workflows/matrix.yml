@@ -13,8 +13,6 @@ jobs:
                 include:
                     - node-version: 18
                       operating-system: ubuntu-latest
-                    - node-version: 17
-                      operating-system: windows-latest
                 exclude:
                     - node-version: 12
                       operating-system: windows-latest
