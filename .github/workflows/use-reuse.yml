@@ -69,7 +69,8 @@ jobs:
   deploy:
     needs: build
     uses: omedvedkov/github-actions-6/.github/workflows/reusable.yml@master
-    with: artifact-name: dist-files
+    with: 
+      artifact-name: dist-files
   report:
     needs: [lint, deploy]
     if: failure()
