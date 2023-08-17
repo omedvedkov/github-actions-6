@@ -68,7 +68,7 @@ jobs:
           path: dist
   deploy:
     needs: build
-    uses: ./.github/workflows/reusable.yml@v1
+    uses: omedvedkov/github-actions-6/.github/workflows/matrix.yml@main
   report:
     needs: [lint, deploy]
     if: failure()
